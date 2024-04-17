@@ -9,7 +9,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    height: 720px;
+    height: 700px;
     align-content: center;
 }
 
@@ -33,7 +33,8 @@
     justify-content: space-between;  
     text-align: center; 
     border: solid;
-    background-color: beige;      
+    background-color: beige;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;    
 }
 
 .nav-list {
@@ -41,7 +42,6 @@
     list-style: none;
     gap: 50px;
     font-size: 25px;
-    font-weight: bold;
     text-decoration: none;
     padding: 10px;
 }
@@ -50,6 +50,8 @@
     padding: 10px;
     color: black;
     text-decoration: none;
+    font-size: 25px;
+    
 }
 
 .importantstuff {
@@ -57,13 +59,13 @@
 }
 
 .articleimg {
-    background-color: rgb(200, 30, 30);
     display: flex;
-    padding: 15px;
     justify-content: center;
-    position: relative;
-    left: 23%;
-    width: 1025px;
+}
+
+.articleimg img {
+    border-radius: 10%;
+    width: 920px;
     border: groove;
 }
 
@@ -172,8 +174,68 @@ footer p {
     color: rgb(200, 30, 30);
 }
 
+footer img {
+    border-radius: 100%;
+    object-fit: cover;
+}
+
 .irpariba{
     font-size: 20px;
+}
+
+@media (max-width:920px) {
+    .nav {
+        display: flex;
+    }
+
+    .container-div {
+        text-align: start;
+        width: 300px;
+        height: 300px;
+        padding: 50px;
+        display: block;
+    }
+
+    h1 {
+        left: 0px;
+    }
+    
+    .articleimg img {
+        width: 580px;
+    }
+
+    .extra {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media (max-width:620px) {
+    .articleimg img {
+        width: 480px;
+    }
+}
+
+@media (max-width:500px) {
+    .articleimg img {
+        width: 300px;
+    }
+
+    h1 {
+        font-size: 40px;
+    }
+
+    h2 {
+        font-size: 30px;
+    }
+
+    h3 {
+        font-size: 24px;
+    }
+    
+    p {
+        font-size: 16px;
+    }    
 }
 
 /*
@@ -254,6 +316,22 @@ htmlvideos
     justify-content: space-evenly;
 }
 
+@media (max-width:1160px) {
+    .videos {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+    }
+}
+
+@media (max-width:620px) {   
+    .videos iframe {
+        height: 300px;
+        width: 300px;
+    }
+}
+
 /*
 htmlAlbums
 */
@@ -298,57 +376,83 @@ lu {
     padding: 20px;
 }
 
+@media (max-width:680px) {
+    .album-box img {
+        width: 290px;
+        height: 290px;
+    }
+    .Albums {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+        padding: 20px;
+        gap: 20px;
+    }
+    h4 {
+        font-size: 24px;
+    }
+
+    h5 {
+        font-size: 20px;
+    }
+}
+
 /*
 htmlbonus
 */
 
 .bonusimage {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
     padding: 50px;
 }
 
 .bonusimage img {
-    width: 350px;
-    height: 350px;
-    object-fit: cover;
     border-radius: 100%;
-    position: relative;
-    left: 15%;
-    bottom: 15px;
+    object-fit: cover;
 }
 
 .bonusarticle {
-    padding: 30px;
-    display: inline-block;
-    width: 50%;
-    height: 100%;
-    vertical-align: middle;
-    position: relative;
-    left: 20%;
-    bottom: 200px;
-    text-align: center;
+    padding: 20px;
+    max-width: 600px;
+    max-height: 100%;
 }
 
 .bonusvideo {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
     padding: 50px;
 }
 
 .bonusvideo iframe {
-    position: relative;
-    left: 60%;
-    bottom: 15px;
-    width: 600px;
-    height: 355px;
+    padding: 20px;
 }
 
 .bonusarticle2 {
-    padding: 30px;
-    display: inline-block;
-    width: 50%;
-    height: 100%;
-    vertical-align: middle;
-    position: relative;
-    right: 30%;
-    bottom: 200px;
-    text-align: center;
+    padding: 20px;
+    max-width: 600px;
+    max-height: 100%;
 }
 
+@media (max-width:920px) {
+    .bonusimage {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }   
+    .bonusvideo {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-evenly;
+        align-items: center;
+    }    
+}
+
+@media (max-width:620px) {
+    .bonusvideo iframe {
+        width: 300px;
+        height: 300px;
+    }
+}
