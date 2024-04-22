@@ -1,0 +1,32 @@
+.bonusimage {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 50px;
+    .bonusimage img {
+        border-radius: 100%;
+        object-fit: cover;
+    }
+
+    .bonusarticle {
+        padding: 20px;
+        max-width: 600px;
+        max-height: 100%;
+    }
+}
+
+.bonusvideo {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 50px;
+    .bonusvideo iframe {
+        padding: 20px;
+    }
+
+    .bonusarticle2 {
+        padding: 20px;
+        max-width: 600px;
+        max-height: 100%;
+    }
+}

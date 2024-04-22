@@ -1,0 +1,139 @@
+//index//
+
+@media (max-width:800px) {
+    .contenedor-div {
+        width: 400px;
+        height: 600px;
+    }
+}
+
+@media (max-width:420px) {
+    .contenedor-div {
+        width: 300px;
+        height: 700px;
+    }
+}
+
+@media (max-width:920px) {
+    .nav {
+        display: flex;
+    }
+
+    .container-div {
+        text-align: start;
+        width: 300px;
+        height: 300px;
+        padding: 50px;
+        display: block;
+    }
+
+    h1 {
+        left: 0px;
+    }
+    
+    .articleimg img {
+        width: 580px;
+    }
+
+    .extra {
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+    }
+}
+
+@media (max-width:620px) {
+    .articleimg img {
+        width: 480px;
+    }
+}
+
+@media (max-width:500px) {
+    .articleimg img {
+        width: 300px;
+    }
+
+    h1 {
+        font-size: 40px;
+    }
+
+    h2 {
+        font-size: 30px;
+    }
+
+    h3 {
+        font-size: 24px;
+    }
+    
+    p {
+        font-size: 16px;
+    }    
+}
+
+//imagenes//
+
+
+
+//videos//
+
+@media (max-width:1160px) {
+    .videos {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+    }
+}
+
+@media (max-width:620px) {   
+    .videos iframe {
+        height: 300px;
+        width: 300px;
+    }
+}
+
+//albums//
+
+@media (max-width:680px) {
+    .album-box img {
+        width: 290px;
+        height: 290px;
+    }
+    .Albums {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+        padding: 20px;
+        gap: 20px;
+    }
+    h4 {
+        font-size: 24px;
+    }
+
+    h5 {
+        font-size: 20px;
+    }
+}
+
+//bonus//
+
+@media (max-width:920px) {
+    .bonusimage {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }   
+    .bonusvideo {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-evenly;
+        align-items: center;
+    }    
+}
+
+@media (max-width:620px) {
+    .bonusvideo iframe {
+        width: 300px;
+        height: 300px;
+    }
+}

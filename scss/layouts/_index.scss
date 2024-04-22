@@ -1,0 +1,133 @@
+.contenedor {
+    background-image: url(../Images/PortadaBuckethead.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 700px;
+    align-content: center;
+    border: solid;
+    border-color: black;
+    .contenedor-div {
+        text-align: start;
+        width: 700px;
+        height: 300px;
+        padding: 50px;
+        display: block;
+    }
+}
+
+.bg-blanco {
+    background-color: beige
+    h6 {
+        color: rgb(200, 30, 30);
+        font-size: 24px;
+    }
+}
+
+.articleimg {
+    display: flex;
+    justify-content: center;
+    .articleimg img {
+        border-radius: 10%;
+        width: 920px;
+        border: groove;
+        box-shadow: 8px 8px 10px rgb(200, 50, 50);
+        transition: 1s;
+    }
+}
+
+.articleimg img:hover {
+    box-shadow: 8px 8px 10px beige;
+}
+
+.googmap {
+    padding-top: 30px;
+    width: 200px;
+    height: 200px;
+}
+
+h1 {
+    color: rgb(255, 228, 196);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 50px;
+    position: relative;
+    left: 50px;
+}
+
+h2 {
+    color: rgb(255, 228, 196);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+}
+
+h3 {
+    color: rgb(255, 228, 196);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.div-parrafos {
+    padding: 50px;
+}
+
+.extra {
+    padding: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    .fecha {
+        text-align: center;
+    }
+
+    .fecha img {
+        width: 200px;
+        height: 200px;
+        border-radius: 100%;
+    }
+
+    .fecha p {
+        text-align: center;
+    }
+
+    .mapa { 
+    text-align: center;
+    }
+}
+
+p {
+    color: rgb(255, 228, 196);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    font-style: oblique;
+}
+
+.parrafoprincipal {
+    color: rgb(255, 228, 196);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    font-style: oblique;
+    position: relative;
+    text-align: center;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 100px;
+    text-align: center;
+    align-items: center;
+    label {
+        color: rgb(255, 228, 196);
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 20px;
+        text-align: center;
+    }
+    button {
+        width: 100px;   
+    }
+}

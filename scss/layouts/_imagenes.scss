@@ -1,0 +1,57 @@
+.box {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas: 
+    'caja1 caja1 caja2 caja2'
+    'caja3 caja4 caja4 caja5'
+    'caja6 caja6 caja7 caja7'
+    'caja8 caja8 caja8 caja8';
+    padding: 40px;
+    gap: 40px;
+    .box-item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        min-height: 500px;
+        max-height: 100%;
+        border: groove;
+        box-shadow: 10px 10px 10px rgb(200, 50, 50);
+        transition: 1s;
+    }
+    .box-item img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .c1 {
+        grid-area: caja1;   
+    }
+    .c2 {
+        grid-area: caja2;
+    }
+    .c3 {
+        grid-area: caja3;
+    }
+    .c4 {
+        grid-area: caja4;
+    }
+    .c5 {
+        grid-area: caja5;
+    }
+    .c6 {
+        grid-area: caja6;
+    }
+    .c7 {
+        grid-area: caja7;
+    }
+    .c8 {
+        grid-area: caja8;
+        height: 1000px;
+    }
+}
+
+.box-item:hover {
+    box-shadow: 10px 10px 10px beige;
+}
