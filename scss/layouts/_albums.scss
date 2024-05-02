@@ -5,7 +5,6 @@ h4 {
     font-weight: bold;
     text-align: center;
 }
-
 h5 {
     color: rgb(255, 228, 196);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -13,24 +12,28 @@ h5 {
     font-weight: bold;
     text-align: center;
 }
-
 .Albums {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
     padding: 20px;
+    gap: 20px; 
+     
+}
+.album-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     gap: 20px;
-    .album-box {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 20px;
+    background-color: midnightblue;
+    border-radius: 25px;
+    border: groove;
+    lu {
+        padding: 20px;
     }
-    .album-box img {
+    img {
         width: 600px;
         height: 600px;
         object-fit: cover;
-    }
-    lu {
         padding: 20px;
     }
 }

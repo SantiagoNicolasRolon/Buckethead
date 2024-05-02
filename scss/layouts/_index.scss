@@ -1,51 +1,65 @@
 .contenedor {
-    background-image: url(../Images/PortadaBuckethead.jpg);
+    background-image: url(../Images/Portada.PNG);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     height: 700px;
     align-content: center;
-    border: solid;
-    border-color: black;
-    .contenedor-div {
-        text-align: start;
-        width: 700px;
-        height: 300px;
-        padding: 50px;
-        display: block;
-    }
 }
-
-.bg-blanco {
-    background-color: beige
-    h6 {
-        color: rgb(200, 30, 30);
-        font-size: 24px;
+.encavbezado {
+    text-align: start;
+    width: 700px;
+    height: 300px;
+    padding: 50px;
+    display: block;
     }
-}
-
 .articleimg {
+    padding: 70px;
     display: flex;
-    justify-content: center;
-    .articleimg img {
-        border-radius: 10%;
-        width: 920px;
+    flex-direction: row;
+    justify-content: space-between;
+    div {
+        width: 1000px;
+    }
+    img {
+        object-fit: cover;
+        border-radius: 25px;
+        width: 420px;
+        height: 550px;
         border: groove;
         box-shadow: 8px 8px 10px rgb(200, 50, 50);
         transition: 1s;
+        &:hover {
+            box-shadow: 8px 8px 10px beige;
+        }
     }
 }
-
-.articleimg img:hover {
-    box-shadow: 8px 8px 10px beige;
+.articleimg2 {
+    padding: 70px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    div {
+        width: 1000px;
+    }
+    img {
+        object-fit: cover;
+        border-radius: 25px;
+        width: 420px;
+        height: 550px;
+        border: groove;
+        box-shadow: 8px 8px 10px rgb(200, 50, 50);
+        transition: 1s;
+        &:hover {
+            box-shadow: 8px 8px 10px beige;
+        }
+    }
 }
-
 .googmap {
     padding-top: 30px;
     width: 200px;
     height: 200px;
 }
-
 h1 {
     color: rgb(255, 228, 196);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -53,15 +67,16 @@ h1 {
     position: relative;
     left: 50px;
 }
-
 h2 {
-    color: rgb(255, 228, 196);
+    color: black;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 40px;
     font-weight: bold;
     text-align: center;
+    background-color: beige;
+    border: solid;
+    padding: 40px;
 }
-
 h3 {
     color: rgb(255, 228, 196);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -69,51 +84,67 @@ h3 {
     font-weight: bold;
     text-align: center;
 }
-
 .div-parrafos {
     padding: 50px;
 }
-
 .extra {
     padding: 50px;
     display: flex;
     justify-content: space-evenly;
-    align-items: center;
-    .fecha {
-        text-align: center;
-    }
-
-    .fecha img {
-        width: 200px;
-        height: 200px;
-        border-radius: 100%;
-    }
-
+    align-items: center;  
+}
+.fecha {
+    text-align: center;
+    width: 400px;
+    height: 400px;
+    padding: 15px;
+    background-color: midnightblue;
+    border: groove;
+    border-radius: 25px;
     .fecha p {
         text-align: center;
     }
-
-    .mapa { 
-    text-align: center;
-    }
 }
-
+.fecha img {
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    padding: 20px;
+}
+.mapa { 
+    text-align: center;
+    width: 400px;
+    height: 400px;
+    padding: 15px;
+    background-color: midnightblue;
+    border: groove;
+    border-radius: 25px;   
+    } 
+.googmap {
+        padding: 20px;
+        width: 260px;
+        height: 200px;
+    }
 p {
     color: rgb(255, 228, 196);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 20px;
     font-style: oblique;
 }
-
-.parrafoprincipal {
+.div-parrafos p {
     color: rgb(255, 228, 196);
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family:Arial, Helvetica, sans-serif;
     font-size: 20px;
-    font-style: oblique;
+    font-style:normal;
     position: relative;
-    text-align: center;
 }
-
+.formparrafo {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    width: 700px;
+    height: 300px; 
+}
 .formulario {
     display: flex;
     flex-direction: column;

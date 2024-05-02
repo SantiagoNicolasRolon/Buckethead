@@ -1,70 +1,109 @@
 //index//
 
-@media (max-width:800px) {
-    .contenedor-div {
-        width: 400px;
-        height: 600px;
-    }
-}
-
-@media (max-width:420px) {
-    .contenedor-div {
-        width: 300px;
-        height: 700px;
-    }
-}
-
 @media (max-width:920px) {
-    .nav {
-        display: flex;
-    }
-
-    .container-div {
+    .encavbezado {
         text-align: start;
-        width: 300px;
+        width: 600px;
         height: 300px;
         padding: 50px;
         display: block;
     }
-
     h1 {
         left: 0px;
     }
-    
-    .articleimg img {
-        width: 580px;
+    .articleimg {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        div {
+            width: 640px;
+        }
     }
-
+    .articleimg2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        div {
+            width: 640px;
+        }
+    }
     .extra {
         display: flex;
         flex-direction: column;
-        gap: 50px;
+        gap: 50px;  
     }
 }
 
-@media (max-width:620px) {
-    .articleimg img {
-        width: 480px;
+@media (max-width:800px) {
+    .encavbezado {
+        width: 400px;
+        height: 600px;
+        padding-top: 150px;
+    }
+}
+@media (max-width:600px) {
+   .articleimg {
+        div {
+            width: 320px;
+        }
+    }
+    .articleimg2 {
+        div {
+            width: 320px;
+        }
+    } 
+}
+
+@media (max-width:480px) {
+    .encavbezado {
+        width: 300px;
+        height: 700px;
+        padding-top: 225px;
+    }
+    .articleimg {
+        img {
+            width: 310px;
+            height: 440px;
+        }
+    }
+    .articleimg2 {
+        img {
+            width: 310px;
+            height: 440px;
+        }
+    }
+}
+
+@media (max-width:620px) {  
+    .fecha {
+        width: 300px;
+        height: 300px;
+    }
+    .fecha img {
+        width: 150px;
+        height: 150px;
+    }
+    .mapa { 
+        width: 300px;
+        height: 400px;
+    }
+    .googmap {
+        padding: 20px;
+        width: 240px;
+        height: 180px;
     }
 }
 
 @media (max-width:500px) {
-    .articleimg img {
-        width: 300px;
-    }
-
     h1 {
         font-size: 40px;
     }
-
     h2 {
         font-size: 30px;
     }
-
     h3 {
         font-size: 24px;
     }
-    
     p {
         font-size: 16px;
     }    
@@ -72,7 +111,51 @@
 
 //imagenes//
 
-
+@media (max-width:920px) {
+    .box {
+        display: flex;
+        flex-direction: column;
+    }
+}
+@media (max-width:860px){
+    .box-item {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .c1 {
+        grid-area: caja1;
+        height: 500px;   
+    }
+    .c2 {
+        grid-area: caja2;
+        height: 500px;
+    }
+    .c3 {
+        grid-area: caja3;
+        height: 500px;
+    }
+    .c4 {
+        grid-area: caja4;
+        height: 500px;
+    }
+    .c5 {
+        grid-area: caja5;
+        height: 500px;
+    }
+    .c6 {
+        grid-area: caja6;
+        height: 500px;
+    }
+    .c7 {
+        grid-area: caja7;
+        height: 500px;
+    }
+    .c8 {
+        grid-area: caja8;
+        height: 500px;
+    }
+}
 
 //videos//
 
@@ -84,7 +167,6 @@
         gap: 40px;
     }
 }
-
 @media (max-width:620px) {   
     .videos iframe {
         height: 300px;
@@ -95,20 +177,19 @@
 //albums//
 
 @media (max-width:680px) {
-    .album-box img {
-        width: 290px;
-        height: 290px;
-    }
     .Albums {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
         padding: 20px;
         gap: 20px;
     }
+    .album-box img {
+        width: 290px;
+        height: 290px;
+    }  
     h4 {
         font-size: 24px;
     }
-
     h5 {
         font-size: 20px;
     }
@@ -130,10 +211,20 @@
         align-items: center;
     }    
 }
-
-@media (max-width:620px) {
+@media (max-width:680px) {
+    .bonus-section {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
     .bonusvideo iframe {
         width: 300px;
         height: 300px;
+    }
+}
+@media (max-width:480px) {
+    .bonusimage img {
+        width: 225px;
+        height: 225px;
+        object-fit: cover;
     }
 }

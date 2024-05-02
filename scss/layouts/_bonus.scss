@@ -1,32 +1,52 @@
+.bonus-section {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
 .bonusimage {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    padding: 50px;
-    .bonusimage img {
+    padding: 25px;
+    background-color: midnightblue;
+    border: groove;
+    border-radius: 25px;
+    img {
+        width: 300px;
+        height: 300px;
         border-radius: 100%;
         object-fit: cover;
     }
-
     .bonusarticle {
         padding: 20px;
         max-width: 600px;
         max-height: 100%;
     }
 }
-
 .bonusvideo {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     padding: 50px;
-    .bonusvideo iframe {
-        padding: 20px;
+    background-color: midnightblue;
+    border: groove;
+    border-radius: 25px;
+    iframe {
+        padding-top: 50px;
+        width: 600px;
+        height: 400px;
     }
-
     .bonusarticle2 {
         padding: 20px;
         max-width: 600px;
         max-height: 100%;
+    }
+    .bonus-section {
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
     }
 }
