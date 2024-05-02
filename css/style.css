@@ -595,8 +595,8 @@ h5 {
     padding-right: 10px;
   }
   .bonusvideo iframe {
-    width: 300px;
-    height: 300px;
+    width: 280px;
+    height: 280px;
   }
 }
 @media (max-width: 480px) {
