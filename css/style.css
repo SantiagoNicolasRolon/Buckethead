@@ -65,7 +65,7 @@ footer .irpariba a {
 }
 
 .contenedor {
-  background-image: url(../Images/Portada.PNG);
+  background-image: url(../images/BcuketheadHeader.PNG);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -79,6 +79,11 @@ footer .irpariba a {
   height: 300px;
   padding: 50px;
   display: block;
+}
+.encavbezado p {
+  color: rgb(140, 25, 25);
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
 }
 
 .articleimg {
@@ -132,11 +137,12 @@ footer .irpariba a {
 }
 
 h1 {
-  color: rgb(255, 228, 196);
+  color: rgb(140, 25, 25);
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   font-size: 50px;
   position: relative;
   left: 50px;
+  font-weight: bold;
 }
 
 h2 {
