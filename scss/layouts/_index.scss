@@ -17,46 +17,66 @@
         font-family:Arial, Helvetica, sans-serif;
         font-weight: bold;
     }
-    }
+}
+body {
+    background-color: $main-color;
+}
+h1 {
+    color: rgb(140, 25, 25);
+    font-family: $titles-font;
+    font-size: 50px;
+    position: relative;
+    left: 50px;
+    font-weight: bold;
+}
+h2 {
+    color: $h2-titles-color;
+    font-family: $titles-font;
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    background-color: $light-color;
+    border: solid;
+    padding: 40px;
+}
+h3 {
+    color: $light-color;
+    font-family: $titles-font;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+}
 .articleimg {
-    padding: 70px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    @include flex(row,space-evenly,none,none);
+    padding: 50px;
     div {
         width: 1000px;
     }
     img {
-        object-fit: cover;
+        @include img(420px,550px,cover);
         border-radius: 25px;
-        width: 420px;
-        height: 550px;
-        border: groove;
-        box-shadow: 8px 8px 10px rgb(200, 50, 50);
+        border: $borders;
+        box-shadow: 8px 8px 10px $shadow-color;
         transition: 1s;
         &:hover {
-            box-shadow: 8px 8px 10px beige;
+            box-shadow: 8px 8px 10px $light-color;
         }
     }
 }
 .articleimg2 {
-    padding: 70px;
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: space-between;
+    @include flex(row-reverse,space-evenly,none,none);
+    padding: 50px;
     div {
         width: 1000px;
     }
     img {
-        object-fit: cover;
+        @include img(420px,550px,cover);
         border-radius: 25px;
-        width: 420px;
-        height: 550px;
-        border: groove;
-        box-shadow: 8px 8px 10px rgb(200, 50, 50);
+        border: $borders;
+        box-shadow: 8px 8px 10px $shadow-color;
         transition: 1s;
         &:hover {
-            box-shadow: 8px 8px 10px beige;
+            box-shadow: 8px 8px 10px $light-color;
         }
     }
 }
@@ -65,55 +85,28 @@
     width: 200px;
     height: 200px;
 }
-h1 {
-    color: rgb(140, 25, 25);
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 50px;
-    position: relative;
-    left: 50px;
-    font-weight: bold;
-}
-h2 {
-    color: black;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 40px;
-    font-weight: bold;
-    text-align: center;
-    background-color: beige;
-    border: solid;
-    padding: 40px;
-}
-h3 {
-    color: rgb(255, 228, 196);
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 30px;
-    font-weight: bold;
-    text-align: center;
-}
+
 .div-parrafos {
     padding: 50px;
 }
 .extra {
+    @include flex(row,space-evenly,none,none);
     padding: 50px;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;  
 }
 .fecha {
     text-align: center;
     width: 400px;
     height: 400px;
     padding: 15px;
-    background-color: midnightblue;
-    border: groove;
+    background-color: $cards-color;
+    border: $borders;
     border-radius: 25px;
     .fecha p {
         text-align: center;
     }
 }
 .fecha img {
-    width: 200px;
-    height: 200px;
+    @include img(200px,200px,cover);
     border-radius: 100%;
     padding: 20px;
 }
@@ -122,8 +115,8 @@ h3 {
     width: 400px;
     height: 400px;
     padding: 15px;
-    background-color: midnightblue;
-    border: groove;
+    background-color: $cards-color;
+    border: $borders;
     border-radius: 25px;   
     } 
 .googmap {
@@ -132,20 +125,19 @@ h3 {
         height: 200px;
     }
 p {
-    color: rgb(255, 228, 196);
+    color: $light-color;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 20px;
     font-style: oblique;
 }
 .div-parrafos p {
-    color: rgb(255, 228, 196);
     font-family:Arial, Helvetica, sans-serif;
     font-size: 20px;
     font-style:normal;
     position: relative;
 }
 .formparrafo {
-    display: flex;
+    @include flex(none,center,center,none);
     justify-content: center;
     text-align: center;
     width: 700px;
@@ -154,12 +146,13 @@ p {
 .formulario {
     display: flex;
     flex-direction: column;
-    gap: 15px;
-    padding: 100px;
-    text-align: center;
     align-items: center;
+    gap: 15px;
+    text-align: center;
+    padding: 100px;
+    
     label {
-        color: rgb(255, 228, 196);
+        color: $light-color;
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         font-size: 20px;
         text-align: center;

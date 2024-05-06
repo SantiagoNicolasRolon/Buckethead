@@ -2,31 +2,30 @@ footer {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 50px;
-    background-color: beige;
     align-items: center;
-    text-align: center;
     gap: 20px;
+    text-align: center;
+    padding: 50px;
+    background-color: $light-color;
+    border: $borders;
     .redes {
         display: flex;
         flex-direction: row;
         gap: 15px;
         img {
-            width: 27px;
-            height: 27px;
+            @include img(27px,27px,cover);
             border-radius: 100%;
-            object-fit: cover;
         }  
     }
     .footerparrafo {
-        color: rgb(200, 50, 50);
+        color: $shadow-color;
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     }
     .irpariba {
         border-radius: 25px;
         border: solid;
         padding: 15px;
-        background-color: rgb(200, 30, 30);
+        background-color: $shadow-color;
         width: 200px;
         transition: 0.5s;
         &:hover {
@@ -36,7 +35,7 @@ footer {
     }
     .irpariba a{
         font-size: 20px;
-        color: black;
+        color: $h2-titles-color;
         text-decoration: none;
     }
 }

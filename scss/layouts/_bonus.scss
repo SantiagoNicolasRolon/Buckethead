@@ -1,24 +1,22 @@
 .bonus-section {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
+    @include flex(column,none,none,20px);
     padding: 20px;
     padding-left: 50px;
     padding-right: 50px;
 }
 .bonusimage {
+    @include flex(row,space-evenly,none,none);
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     padding: 25px;
-    background-color: midnightblue;
-    border: groove;
+    background-color: $cards-color;
+    border: $borders;
     border-radius: 25px;
     img {
-        width: 300px;
-        height: 300px;
+        @include img(300px,300px,cover);
         border-radius: 100%;
-        object-fit: cover;
+        border: $borders;
     }
     .bonusarticle {
         padding: 20px;
@@ -27,16 +25,14 @@
     }
 }
 .bonusvideo {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
+    @include flex(row,space-evenly,none,none);
     padding: 50px;
-    background-color: midnightblue;
-    border: groove;
+    background-color: $cards-color;
+    border: $borders;
     border-radius: 25px;
     iframe {
         padding-top: 50px;
-        width: 600px;
+        width: 550px;
         height: 400px;
     }
     .bonusarticle2 {
@@ -45,8 +41,7 @@
         max-height: 100%;
     }
     .bonus-section {
-        display: flex;
-        flex-direction: column;
+        @include flex(column,none,none,none);
         padding: 20px;
     }
 }

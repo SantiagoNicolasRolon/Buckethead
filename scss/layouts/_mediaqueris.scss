@@ -30,6 +30,7 @@
     .extra {
         display: flex;
         flex-direction: column;
+        align-items: center;
         gap: 50px;  
     }
 }
@@ -60,14 +61,12 @@
     }
     .articleimg {
         img {
-            width: 310px;
-            height: 440px;
+            @include img(310px,440px,none);
         }
     }
     .articleimg2 {
         img {
-            width: 310px;
-            height: 440px;
+            @include img(310px,440px,none);
         }
     }
 }
@@ -77,8 +76,7 @@
         height: 300px;
     }
     .fecha img {
-        width: 150px;
-        height: 150px;
+        @include img(150px,150px,none);
     }
     .mapa { 
         width: 300px;
@@ -109,8 +107,7 @@
 
 @media (max-width:920px) {
     .box {
-        display: flex;
-        flex-direction: column;
+        @include flex(column,none,none,none);
     }
 }
 @media (max-width:860px){
@@ -172,16 +169,18 @@
 
 //albums//
 
-@media (max-width:680px) {
+@media (max-width:1200px) {
     .Albums {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
         padding: 20px;
         gap: 20px;
     }
-    .album-box img {
-        width: 290px;
-        height: 290px;
+    .album-box {
+        max-width: 300px; 
+        img {
+            @include img(290px,290px,cover); 
+        }
     }  
     h4 {
         font-size: 24px;
@@ -219,8 +218,6 @@
 }
 @media (max-width:480px) {
     .bonusimage img {
-        width: 225px;
-        height: 225px;
-        object-fit: cover;
+        @include img(225px,225px,cover);
     }
 }
