@@ -76,7 +76,7 @@
         height: 300px;
     }
     .fecha img {
-        @include img(150px,150px,none);
+        @include img(150px,150px,cover);
     }
     .mapa { 
         width: 300px;

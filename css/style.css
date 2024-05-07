@@ -512,7 +512,7 @@ h5 {
   .fecha img {
     width: 150px;
     height: 150px;
-    object-fit: none;
+    object-fit: cover;
   }
   .mapa {
     width: 300px;
