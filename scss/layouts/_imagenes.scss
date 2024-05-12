@@ -20,10 +20,10 @@
     }
     .box-item img {
         @include img(100%,100%,cover);
-        border-radius: 25px;
+        border-radius: 25px;   
     }
     .c1 {
-        grid-area: caja1;   
+        grid-area: caja1; 
     }
     .c2 {
         grid-area: caja2;
