@@ -173,7 +173,7 @@ h3 {
 }
 
 .div-parrafos {
-  padding: 50px;
+  padding: 40px;
 }
 
 .extra {
@@ -512,7 +512,7 @@ h4 {
     gap: 20px;
   }
   .articleimg div {
-    width: 640px;
+    width: 580px;
   }
   .articleimg2 {
     display: flex;
@@ -522,7 +522,7 @@ h4 {
     gap: 20px;
   }
   .articleimg2 div {
-    width: 640px;
+    width: 580px;
   }
   .extra {
     display: flex;
@@ -533,10 +533,10 @@ h4 {
 }
 @media (max-width: 600px) {
   .articleimg div {
-    width: 320px;
+    width: 300px;
   }
   .articleimg2 div {
-    width: 320px;
+    width: 300px;
   }
 }
 @media (max-width: 480px) {
