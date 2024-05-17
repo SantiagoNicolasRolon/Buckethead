@@ -12,7 +12,7 @@
     height: 100%;
     padding: 50px 200px 50px 950px;
     p {
-        color: bisque;
+        color: $light-color;
         font-family:Arial, Helvetica, sans-serif;
         font-weight: bold;
     }
@@ -21,7 +21,7 @@ body {
     background-color: $main-color;
 }
 h1 {
-    color: bisque;
+    color: $light-color;
     font-family: $titles-font;
     font-size: 50px;
     padding-left: 25px;
